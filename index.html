@@ -31,8 +31,8 @@
     <div class="mx-auto max-w-7xl ">
         <nav class="flex items-center w-full h-24 select-none" x-data="{ showMenu: false }">
             <div class="relative flex flex-wrap items-center justify-between w-full h-24 mx-auto font-medium md:justify-center">
-                <a href="/" class="w-1/4 py-4 pl-6 pr-4 md:pl-4 md:py-0">
-                    <span class="p-1 text-xl font-black leading-none text-white select-none"><span>Karya Ivander</span><span class="text-indigo-300">.</span></span>
+                <a href="/" class="py-4 pl-6 pr-4 md:pl-4 md:py-0">
+                    <span class="p-1 text-xl font-black leading-none text-white select-none" style="text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;"><span>Karya Ivander</span><span class="text-indigo-300">.</span></span>
                 </a>
                 <!-- <div class="fixed top-0 left-0 z-40 items-center hidden w-full h-full p-3 text-xl bg-gray-900 bg-opacity-50 md:text-sm lg:text-base md:w-3/4 md:bg-transparent md:p-0 md:relative md:flex" :class="{'flex': showMenu, 'hidden': !showMenu }">
                     <div class="flex-col w-full h-auto h-full overflow-hidden bg-white rounded-lg select-none md:bg-transparent md:rounded-none md:relative md:flex md:flex-row md:overflow-auto">
@@ -57,8 +57,8 @@
         </nav>
         <div class="container py-32 mx-auto text-center sm:px-4">
 
-            <h1 class="text-4xl font-extrabold leading-10 tracking-tight text-white sm:text-5xl sm:leading-none md:text-6xl xl:text-7xl"><span class="block text-yellow-300" >Bengkel Las</span> <span class="relative inline-block mt-3 text-green-300" >Karya Ivander</span></h1>
-            <div class="max-w-lg mx-auto mt-6 text-sm text-center md:mt-12 sm:text-base md:max-w-xl md:text-lg xl:text-xl text-white" >Bengkel Las kami mengerjakan kanopi, railing tangga, pagar, teralis, rangka besi, papan iklan dan lain-lain</div>
+            <h1 class="text-4xl font-extrabold leading-10 tracking-tight text-white sm:text-5xl sm:leading-none md:text-6xl xl:text-7xl" style="text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;"><span class="block text-yellow-300" >Bengkel Las</span> <span class="relative inline-block mt-3 text-green-300" >Karya Ivander</span></h1>
+            <div class="max-w-lg mx-auto mt-6 text-lg text-center md:mt-12 sm:text-base md:max-w-xl md:text-lg xl:text-xl text-white" style="text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;" >Bengkel Las kami mengerjakan kanopi, railing tangga, pagar, teralis, rangka besi, papan iklan dan lain-lain</div>
         </div>
     </div>
 </section>
@@ -66,23 +66,94 @@
 
 
 <!-- Section 2 -->
-<section id="product" class="py-20 bg-white">
+<section id="product" class="py-10 bg-white">
     <div class="container max-w-6xl mx-auto">
         <h2 class="text-4xl font-bold tracking-tight text-center">Produk & Jasa Kami</h2>
-        <p class="mt-2 text-lg text-center text-gray-600">Kesempurnaan pekerjaan merupakan nilai lebih kami.</p>
+        <p class="py-5 text-lg text-center text-gray-600"><span>Kesempurnaan pekerjaan</span></p>
+        <p class="-mt-4 text-lg text-center text-gray-600"><span> merupakan tujuan kami.</span></p>
         <div class="grid grid-cols-3 gap-8 mt-10 mr-2 ml-2 sm:grid-cols-8 lg:grid-cols-12 sm:px-8 xl:px-0">
             
             <div class="grid grid-cols-12 gap-7  col-span-12">
                 <div class="flex flex-col items-start col-span-12 overflow-hidden shadow-sm rounded-xl md:col-span-6 lg:col-span-4">
                     <!--<a href="#_" class="block transition duration-200 ease-out transform hover:scale-110">-->
-                        <img class="object-cover w-full shadow-sm max-h-56" style="height: 633px;" src="img/railing-tangga.jpeg">
+                        <img class="object-cover w-full shadow-sm max-h-56" style="height: 633px;" src="img/rail/rail-1.jpg">
                     <!--</a>-->
                     <div class="relative flex flex-col items-start px-6 bg-white border border-t-0 border-gray-200 py-7 rounded-b-2xl">
                         <div class="bg-indigo-400 absolute top-0 -mt-3 flex items-center px-3 py-1.5 leading-none w-auto inline-block rounded-full text-xs font-medium uppercase text-white inline-block">
-                            <span>Railing tangga</span>
+                            <span>Railing tangga/balkon</span>
                         </div>
                         <h2 class="text-base font-bold sm:text-lg md:text-xl"><a href="#_">Terbuat dari besi galvanis</a></h2>
                         <p class="mt-2 text-sm text-gray-500">Tangga rumah anda menjadi indah. Kualitas kuat & halus. Tersedia juga railing balkon</p>
+                        <!-- <div class="w-full h-full flex items-center justify-center" x-data="{ open: false }" @keydown.escape="open = false">
+                            <button
+                                class="bg-green-400 absolute  top-0 -mt-3 ml-64 flex items-end px-3 py-1.5 leading-none w-auto inline-block rounded-full text-xs font-medium uppercase text-white inline-block"
+                                @click="open = true">
+                                Gallery
+                            </button>
+                        
+                            <div class="z-30 fixed top-0 left-0 w-full h-full flex items-center justify-center"
+                                style="background-color: rgba(0, 0, 0);" x-show.transition="open">
+                                <div
+                                    class="flex items-center justify-start w-12 m-2 ml-6 mb-4 md:m-2 z-30 absolute bottom-0 transform translate-x-12 md:translate-x-32">
+                                    <button class="text-white w-12 h-12 rounded-full flex items-center justify-center focus:outline-none"
+                                        style="background-color: rgba(0,0,0);" @click="open = false">
+                                        <img src="https://obr.now.sh/remixicon/system/close-fill/64/ffffff" class="w-6 h-6">
+                                    </button>
+                                </div>
+                                <div class="h-full w-full flex items-center justify-center overflow-hidden"
+                                    x-data="{activeSlide: 0, slides: ['https://s3.eu-central-1.amazonaws.com/mmreality-2019-testing/medium2/offer/40/70/b7f0a6fe156a4cb178c045360b48ad23eaa4.jpg', 'https://s3.eu-central-1.amazonaws.com/mmreality-2019-testing/medium2/offer/41/3e/b579add17b370dbf55964d52dd54a4595643.jpg', 'https://s3.eu-central-1.amazonaws.com/mmreality-2019-testing/medium2/offer/b8/8a/e7942d72cb11ed444b1dccd5edda46c8c84b.jpg', 'https://s3.eu-central-1.amazonaws.com/mmreality-2019-testing/medium2/offer/e3/1e/e3c34dc2a02c202dbcca2ef0117eee5fc29c.jpg', 'https://s3.eu-central-1.amazonaws.com/mmreality-2019-testing/medium2/offer/4e/1a/ba4810652d072eee7dfb8eb818a9b36e0b55.jpg','https://s3.eu-central-1.amazonaws.com/mmreality-2019-testing/medium2/offer/e5/33/4546373d4889bc623e33c95ceae0137dd7bd.jpg']}">
+                        
+                                    <template x-for="(slide, index) in slides" :key="index">
+                                        <div class="h-full w-full flex items-center justify-center absolute">
+                                            <div class="absolute top-0 bottom-0 py-2 md:py-24 px-2 flex flex-col items-center justify-center"
+                                                x-show="activeSlide === index" x-transition:enter="transition ease-out duration-150"
+                                                x-transition:enter-start="opacity-0 transform scale-90"
+                                                x-transition:enter-end="opacity-100 transform scale-100"
+                                                x-transition:leave="transition ease-in duration-150"
+                                                x-transition:leave-start="opacity-100 transform scale-100"
+                                                x-transition:leave-end="opacity-0 transform scale-90">
+                        
+                                                <img :src="slide" class="object-contain max-w-full max-h-full rounded shadow-lg" />
+                                                <div
+                                                    class="bg-white rounded-full flex-shrink-0 px-3 py-1 shadow-sm leading-tight text-xs lg:text-sm max-w-sm text-center mx-4 mt-4 hidden md:block">
+                                                    Railing tangga & balkon <span x-text="index + 1"></span>
+                                                </div>
+                                            </div>
+                                            <div class="fixed text-white text-sm font-bold bottom-0 transform -translate-x-10 w-40 h-12 mb-2 hidden md:flex justify-center items-center"
+                                                x-show="activeSlide === index">
+                                                <span class="w-12 text-right" x-text="index + 1"></span>
+                                                <span class="w-4 text-center">/</span>
+                                                <span class="w-12 text-left" x-text="slides.length"></span>
+                                            </div>
+                                        </div>
+                                    </template>
+                        
+                                    <div
+                                        class="fixed z-30 bottom-0 mb-4 md:mb-2 transform -translate-x-8 md:-translate-x-10 flex justify-center">
+                                        <div class="flex items-center justify-end w-12 mr-3 md:mr-16">
+                                            <button type="button"
+                                                class="w-12 h-12 rounded-full focus:outline-none flex items-center justify-center"
+                                                style="background-color: rgba(0,0,0);"
+                                                @click="activeSlide = activeSlide === 0 ? slides.length - 1 : activeSlide - 1">
+                                                <img src="https://obr.now.sh/remixicon/system/arrow-left-s-line/64/ffffff" class="w-6 h-6">
+                                            </button>
+                                        </div>
+                                        <div class="flex items-center justify-start w-12 md:ml-16">
+                                            <button type="button"
+                                                class="text-white font-bold w-12 h-12 rounded-full focus:outline-none flex items-center justify-center"
+                                                style="background-color: rgba(0,0,0);"
+                                                @click="activeSlide = activeSlide === slides.length - 1 ? 0 : activeSlide + 1">
+                                                <img src="https://obr.now.sh/remixicon/system/arrow-right-s-line/64/ffffff" class="w-6 h-6">
+                                            </button>
+                                        </div>
+                                    </div>
+                        
+                                </div>
+                            </div>
+                        </div> -->
+                        <!-- <a href="#" class="bg-green-400 absolute  top-0 -mt-3 ml-64 flex items-end px-3 py-1.5 leading-none w-auto inline-block rounded-full text-xs font-medium uppercase text-white inline-block">
+                            <span>Gallery</span>
+                        </a> -->
                     </div>
                 </div>
 
@@ -96,12 +167,79 @@
                         </div>
                         <h2 class="text-base font-bold sm:text-lg md:text-xl"><a href="#_">Atap rumah minimalis</a></h2>
                         <p class="mt-2 text-sm text-gray-500">Bahan kuat dan kontruksi kokoh menjaga halaman rumah tetap nyaman.</p>
+                        <div class=" w-full h-full flex items-center justify-center" x-data="{ open: false }" @keydown.escape="open = false">
+                            <button
+                                class="bg-green-400 absolute  top-0 -mt-3 ml-64 flex items-end px-3 py-1.5 leading-none w-auto inline-block rounded-full text-xs font-medium uppercase text-white inline-block"
+                                @click="open = true">
+                                Gallery
+                            </button>
+                        
+                            <div class="z-30 fixed top-0 left-0 w-full h-full flex items-center justify-center"
+                                style="background-color: rgb(0, 0, 0);" x-show.transition="open">
+                                <div
+                                    class="flex items-center justify-start w-12 m-2 ml-6 mb-4 md:m-2 z-30 absolute bottom-0 transform translate-x-12 md:translate-x-32">
+                                    <button class="text-white w-12 h-12 rounded-full flex items-center justify-center focus:outline-none"
+                                        style="background-color: rgba(0,0,0);" @click="open = false">
+                                        <img src="https://obr.now.sh/remixicon/system/close-fill/64/ffffff" class="w-6 h-6">
+                                    </button>
+                                </div>
+                                <div class="h-full w-full flex items-center justify-center overflow-hidden"
+                                    x-data="{activeSlide: 0, slides: ['img/kanopi/kanopi-1.jpg', 'img/kanopi/kanopi-2.jpg', 'img/kanopi/kanopi-3.jpg']}">
+                        
+                                    <template x-for="(slide, index) in slides" :key="index">
+                                        <div class="h-full w-full flex items-center justify-center absolute">
+                                            <div class="absolute top-0 bottom-0 py-2 md:py-24 px-2 flex flex-col items-center justify-center"
+                                                x-show="activeSlide === index" x-transition:enter="transition ease-out duration-150"
+                                                x-transition:enter-start="opacity-0 transform scale-90"
+                                                x-transition:enter-end="opacity-100 transform scale-100"
+                                                x-transition:leave="transition ease-in duration-150"
+                                                x-transition:leave-start="opacity-100 transform scale-100"
+                                                x-transition:leave-end="opacity-0 transform scale-90">
+                        
+                                                <img :src="slide" class="object-contain max-w-full max-h-full rounded shadow-lg" />
+                                                <div
+                                                    class="bg-white rounded-full flex-shrink-0 px-3 py-1 shadow-sm leading-tight text-xs lg:text-sm max-w-sm text-center mx-4 mt-4 hidden md:block">
+                                                    Kanopi <span x-text="index + 1"></span>
+                                                </div>
+                                            </div>
+                                            <div class="fixed text-white text-sm font-bold bottom-0 transform -translate-x-10 w-40 h-12 mb-2 hidden md:flex justify-center items-center"
+                                                x-show="activeSlide === index">
+                                                <span class="w-12 text-right" x-text="index + 1"></span>
+                                                <span class="w-4 text-center">/</span>
+                                                <span class="w-12 text-left" x-text="slides.length"></span>
+                                            </div>
+                                        </div>
+                                    </template>
+                        
+                                    <div
+                                        class="fixed z-30 bottom-0 mb-4 md:mb-2 transform -translate-x-8 md:-translate-x-10 flex justify-center">
+                                        <div class="flex items-center justify-end w-12 mr-3 md:mr-16">
+                                            <button type="button"
+                                                class="w-12 h-12 rounded-full focus:outline-none flex items-center justify-center"
+                                                style="background-color: rgba(0,0,0);"
+                                                @click="activeSlide = activeSlide === 0 ? slides.length - 1 : activeSlide - 1">
+                                                <img src="https://obr.now.sh/remixicon/system/arrow-left-s-line/64/ffffff" class="w-6 h-6">
+                                            </button>
+                                        </div>
+                                        <div class="flex items-center justify-start w-12 md:ml-16">
+                                            <button type="button"
+                                                class="text-white font-bold w-12 h-12 rounded-full focus:outline-none flex items-center justify-center"
+                                                style="background-color: rgba(0,0,0);"
+                                                @click="activeSlide = activeSlide === slides.length - 1 ? 0 : activeSlide + 1">
+                                                <img src="https://obr.now.sh/remixicon/system/arrow-right-s-line/64/ffffff" class="w-6 h-6">
+                                            </button>
+                                        </div>
+                                    </div>
+                        
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
                 <div class="flex flex-col items-start col-span-12 overflow-hidden shadow-sm rounded-xl md:col-span-6 lg:col-span-4">
                     <!--<a href="#_" class="block transition duration-200 ease-out transform hover:scale-110">-->
-                        <img class="object-cover w-full shadow-sm max-h-56" style="height: 633px;" src="img/pagar.png">
+                        <img class="object-cover w-full shadow-sm max-h-56" style="height: 633px;" src="img/pagar/pagar-1.jpg">
                     <!--</a>-->
                     <div class="relative flex flex-col items-start px-6 bg-white border border-t-0 border-gray-200 py-7 rounded-b-2xl">
                         <div class="bg-purple-500 absolute top-0 -mt-3 flex items-center px-3 py-1.5 leading-none w-auto inline-block rounded-full text-xs font-medium uppercase text-white inline-block">
@@ -165,6 +303,73 @@
                         </div>
                         <h2 class="text-base font-bold sm:text-lg md:text-xl"><a href="#_">Pintu Besi</a></h2>
                         <p class="mt-2 text-sm text-gray-500">Pintu besi untuk keamanan rumah tidak selalu harus kaku tapi elegan juga.</p>
+                        <div class="w-full h-full flex items-center justify-center" x-data="{ open: false }" @keydown.escape="open = false">
+                            <button
+                                class="bg-green-400 absolute  top-0 -mt-3 ml-64 flex items-end px-3 py-1.5 leading-none w-auto inline-block rounded-full text-xs font-medium uppercase text-white inline-block"
+                                @click="open = true">
+                                Gallery
+                            </button>
+                        
+                            <div class="z-30 fixed top-0 left-0 w-full h-full flex items-center justify-center"
+                                style="background-color: rgba(0, 0, 0);" x-show.transition="open">
+                                <div
+                                    class="flex items-center justify-start w-12 m-2 ml-6 mb-4 md:m-2 z-30 absolute bottom-0 transform translate-x-12 md:translate-x-32">
+                                    <button class="text-white w-12 h-12 rounded-full flex items-center justify-center focus:outline-none"
+                                        style="background-color: rgba(0,0,0);" @click="open = false">
+                                        <img src="https://obr.now.sh/remixicon/system/close-fill/64/ffffff" class="w-6 h-6">
+                                    </button>
+                                </div>
+                                <div class="h-full w-full flex items-center justify-center overflow-hidden"
+                                    x-data="{activeSlide: 0, slides: ['img/pintu/pintu-1.jpg', 'img/pintu/pintu-2.jpg', 'img/pintu/pintu-3.jpg', 'img/pintu/pintu-4.jpg', 'img/pintu/pintu-5.jpg', 'img/pintu/pintu-6.jpg', 'img/pintu/pintu-7.jpg', 'img/pintu/pintu-8.jpg', 'img/pintu/pintu-9.jpg' ]}">
+                        
+                                    <template x-for="(slide, index) in slides" :key="index">
+                                        <div class="h-full w-full flex items-center justify-center absolute">
+                                            <div class="absolute top-0 bottom-0 py-2 md:py-24 px-2 flex flex-col items-center justify-center"
+                                                x-show="activeSlide === index" x-transition:enter="transition ease-out duration-150"
+                                                x-transition:enter-start="opacity-0 transform scale-90"
+                                                x-transition:enter-end="opacity-100 transform scale-100"
+                                                x-transition:leave="transition ease-in duration-150"
+                                                x-transition:leave-start="opacity-100 transform scale-100"
+                                                x-transition:leave-end="opacity-0 transform scale-90">
+                        
+                                                <img :src="slide" class="object-contain max-w-full max-h-full rounded shadow-lg" />
+                                                <div
+                                                    class="bg-white rounded-full flex-shrink-0 px-3 py-1 shadow-sm leading-tight text-xs lg:text-sm max-w-sm text-center mx-4 mt-4 hidden md:block">
+                                                    Pintu <span x-text="index + 1"></span>
+                                                </div>
+                                            </div>
+                                            <div class="fixed text-white text-sm font-bold bottom-0 transform -translate-x-10 w-40 h-12 mb-2 hidden md:flex justify-center items-center"
+                                                x-show="activeSlide === index">
+                                                <span class="w-12 text-right" x-text="index + 1"></span>
+                                                <span class="w-4 text-center">/</span>
+                                                <span class="w-12 text-left" x-text="slides.length"></span>
+                                            </div>
+                                        </div>
+                                    </template>
+                        
+                                    <div
+                                        class="fixed z-30 bottom-0 mb-4 md:mb-2 transform -translate-x-8 md:-translate-x-10 flex justify-center">
+                                        <div class="flex items-center justify-end w-12 mr-3 md:mr-16">
+                                            <button type="button"
+                                                class="w-12 h-12 rounded-full focus:outline-none flex items-center justify-center"
+                                                style="background-color: rgba(0,0,0);"
+                                                @click="activeSlide = activeSlide === 0 ? slides.length - 1 : activeSlide - 1">
+                                                <img src="https://obr.now.sh/remixicon/system/arrow-left-s-line/64/ffffff" class="w-6 h-6">
+                                            </button>
+                                        </div>
+                                        <div class="flex items-center justify-start w-12 md:ml-16">
+                                            <button type="button"
+                                                class="text-white font-bold w-12 h-12 rounded-full focus:outline-none flex items-center justify-center"
+                                                style="background-color: rgba(0,0,0);"
+                                                @click="activeSlide = activeSlide === slides.length - 1 ? 0 : activeSlide + 1">
+                                                <img src="https://obr.now.sh/remixicon/system/arrow-right-s-line/64/ffffff" class="w-6 h-6">
+                                            </button>
+                                        </div>
+                                    </div>
+                        
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
@@ -178,6 +383,73 @@
                         </div>
                         <h2 class="text-base font-bold sm:text-lg md:text-xl"><a href="#_">Teralis</a></h2>
                         <p class="mt-2 text-sm text-gray-500">Lindungi rumah anda dengan teralis minimalis dengan design modern.</p>
+                        <div class="w-full h-full flex items-center justify-center" x-data="{ open: false }" @keydown.escape="open = false">
+                            <button
+                                class="bg-green-400 absolute  top-0 -mt-3 ml-64 flex items-end px-3 py-1.5 leading-none w-auto inline-block rounded-full text-xs font-medium uppercase text-white inline-block"
+                                @click="open = true">
+                                Gallery
+                            </button>
+                        
+                            <div class="z-30 fixed top-0 left-0 w-full h-full flex items-center justify-center"
+                                style="background-color: rgba(0, 0, 0);" x-show.transition="open">
+                                <div
+                                    class="flex items-center justify-start w-12 m-2 ml-6 mb-4 md:m-2 z-30 absolute bottom-0 transform translate-x-12 md:translate-x-32">
+                                    <button class="text-white w-12 h-12 rounded-full flex items-center justify-center focus:outline-none"
+                                        style="background-color: rgba(0,0,0);" @click="open = false">
+                                        <img src="https://obr.now.sh/remixicon/system/close-fill/64/ffffff" class="w-6 h-6">
+                                    </button>
+                                </div>
+                                <div class="h-full w-full flex items-center justify-center overflow-hidden"
+                                    x-data="{activeSlide: 0, slides: ['img/teralis/teralis-1.jpg', 'img/teralis/teralis-2.jpg', 'img/teralis/teralis-3.jpg', 'img/teralis/teralis-4.jpg']}">
+                        
+                                    <template x-for="(slide, index) in slides" :key="index">
+                                        <div class="h-full w-full flex items-center justify-center absolute">
+                                            <div class="absolute top-0 bottom-0 py-2 md:py-24 px-2 flex flex-col items-center justify-center"
+                                                x-show="activeSlide === index" x-transition:enter="transition ease-out duration-150"
+                                                x-transition:enter-start="opacity-0 transform scale-90"
+                                                x-transition:enter-end="opacity-100 transform scale-100"
+                                                x-transition:leave="transition ease-in duration-150"
+                                                x-transition:leave-start="opacity-100 transform scale-100"
+                                                x-transition:leave-end="opacity-0 transform scale-90">
+                        
+                                                <img :src="slide" class="object-contain max-w-full max-h-full rounded shadow-lg" />
+                                                <div
+                                                    class="bg-white rounded-full flex-shrink-0 px-3 py-1 shadow-sm leading-tight text-xs lg:text-sm max-w-sm text-center mx-4 mt-4 hidden md:block">
+                                                    Teralis <span x-text="index + 1"></span>
+                                                </div>
+                                            </div>
+                                            <div class="fixed text-white text-sm font-bold bottom-0 transform -translate-x-10 w-40 h-12 mb-2 hidden md:flex justify-center items-center"
+                                                x-show="activeSlide === index">
+                                                <span class="w-12 text-right" x-text="index + 1"></span>
+                                                <span class="w-4 text-center">/</span>
+                                                <span class="w-12 text-left" x-text="slides.length"></span>
+                                            </div>
+                                        </div>
+                                    </template>
+                        
+                                    <div
+                                        class="fixed z-30 bottom-0 mb-4 md:mb-2 transform -translate-x-8 md:-translate-x-10 flex justify-center">
+                                        <div class="flex items-center justify-end w-12 mr-3 md:mr-16">
+                                            <button type="button"
+                                                class="w-12 h-12 rounded-full focus:outline-none flex items-center justify-center"
+                                                style="background-color: rgba(0,0,0);"
+                                                @click="activeSlide = activeSlide === 0 ? slides.length - 1 : activeSlide - 1">
+                                                <img src="https://obr.now.sh/remixicon/system/arrow-left-s-line/64/ffffff" class="w-6 h-6">
+                                            </button>
+                                        </div>
+                                        <div class="flex items-center justify-start w-12 md:ml-16">
+                                            <button type="button"
+                                                class="text-white font-bold w-12 h-12 rounded-full focus:outline-none flex items-center justify-center"
+                                                style="background-color: rgba(0,0,0);"
+                                                @click="activeSlide = activeSlide === slides.length - 1 ? 0 : activeSlide + 1">
+                                                <img src="https://obr.now.sh/remixicon/system/arrow-right-s-line/64/ffffff" class="w-6 h-6">
+                                            </button>
+                                        </div>
+                                    </div>
+                        
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
@@ -269,7 +541,7 @@
     <div class="elfsight-app-8d164bd5-8c8c-48a0-8c4c-4f8c99cbb5ad"></div>
 </section>
 
-
+    
 
 <!-- Section 3 -->
 <section id="hubkami" class="px-2 py-32 bg-white md:px-0">
